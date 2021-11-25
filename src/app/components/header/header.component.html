@@ -10,6 +10,25 @@
       <div class="profile">LogIn</div>
       <div class="profile">SignUp</div>
     </div>
+    <div class="nav_menu">
+      <div class="burger_menu" (click)="burgerMenu()">
+        <div
+          class="burger_menu_false"
+          [ngStyle]="{ display: menu ? 'none' : 'flex' }"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div
+          class="burger_menu_true"
+          [ngStyle]="{ display: !menu ? 'none' : 'flex' }"
+        >
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="lower">
     <h2>Support Local BookStores Shope online with BookStore</h2>
@@ -20,4 +39,12 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="nav_list" [ngStyle]="{ display: !menu ? 'none' : 'flex' }">
+  <div class="fb">facebook</div>
+  <div class="insta">instagram</div>
+  <div class="twitter">twitter</div>
+  <div class="profile">LogIn</div>
+  <div class="profile">SignUp</div>
 </div>

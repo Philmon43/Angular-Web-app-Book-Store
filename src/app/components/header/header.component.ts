@@ -8,8 +8,13 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderComponent implements OnInit {
   faSearch = faSearch;
+  menu = false;
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  burgerMenu() {
+    return (this.menu = !this.menu);
+  }
 }
