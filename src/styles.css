@@ -12,3 +12,6 @@
 *:after {
   box-sizing: inherit;
 }
+body {
+  background-color: #333;
+}

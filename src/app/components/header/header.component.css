@@ -1,5 +1,10 @@
 .container {
-  background-color: rgb(240, 240, 0);
+  background: linear-gradient(
+    to right,
+    rgb(240, 240, 0),
+    yellow,
+    rgb(240, 240, 0)
+  );
   padding: 12px;
   overflow: hidden;
   height: 50vh;
@@ -45,6 +50,7 @@
   width: 35%;
   border: 1px solid black;
   cursor: pointer;
+  z-index: 1;
 }
 
 .search_input {

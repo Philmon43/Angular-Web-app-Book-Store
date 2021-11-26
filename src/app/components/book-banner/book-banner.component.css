@@ -1,0 +1,72 @@
+.banner_container {
+  position: relative;
+  top: -100px;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 5px;
+  overflow: hidden;
+}
+
+.img > img {
+  max-width: 100%;
+  border-radius: 2px;
+  box-shadow: 1px 2px 5px black;
+}
+
+.img:nth-child(2),
+.img:nth-child(13) {
+  position: relative;
+  top: 30px;
+}
+
+.img:nth-child(3),
+.img:nth-child(14) {
+  position: relative;
+  top: 60px;
+}
+.img:nth-child(4),
+.img:nth-child(15) {
+  position: relative;
+  top: 80px;
+}
+
+.img:nth-child(5),
+.img:nth-child(16) {
+  position: relative;
+  top: 100px;
+}
+
+.img:nth-child(6),
+.img:nth-child(17) {
+  position: relative;
+  top: 100px;
+}
+
+.img:nth-child(7),
+.img:nth-child(18) {
+  position: relative;
+  top: 100px;
+}
+
+.img:nth-child(8),
+.img:nth-child(19) {
+  position: relative;
+  top: 80px;
+}
+
+.img:nth-child(9),
+.img:nth-child(20) {
+  position: relative;
+  top: 60px;
+}
+
+.img:nth-child(10),
+.img:nth-child(21) {
+  position: relative;
+  top: 30px;
+}
+@media only screen and (max-width: 800px) {
+  .banner_container {
+    display: none;
+  }
+}

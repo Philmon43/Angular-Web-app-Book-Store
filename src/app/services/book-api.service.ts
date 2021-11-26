@@ -12,4 +12,7 @@ export class BookApiService {
   getAuthors(): Observable<any> {
     return this.http.get<any>(this.apiUrl + '/authors');
   }
+  getImages(image: String): Observable<any> {
+    return this.http.get<any>(this.apiUrl + image);
+  }
 }
