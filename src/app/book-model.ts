@@ -1,6 +1,12 @@
 export interface BookModel {
-  id?: String;
-  name: string;
-  biography: string;
+  ISBN: Number;
+  title: string;
+  author: string;
+  summary: String;
   image: String;
+  price: {
+    currency: String;
+    value: Number;
+    displayValue: String;
+  };
 }

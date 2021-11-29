@@ -1,1 +1,10 @@
-<p>book-card works!</p>
+<div class="card_container">
+  <div class="card" *ngFor="let book of books">
+    <div class="img">
+      <img src="{{ book.image }}" alt="" />
+    </div>
+    <div class="title">{{ book.title }}</div>
+    <div class="author">Author: {{ book.author }}</div>
+    <div class="price">Price: {{ book.price.displayValue }}</div>
+  </div>
+</div>
