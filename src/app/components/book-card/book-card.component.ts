@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { BookApiService } from 'src/app/services/book-api.service';
 import { BookModel } from 'src/app/book-model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-book-card',
@@ -10,11 +11,18 @@ import { BookModel } from 'src/app/book-model';
 })
 export class BookCardComponent implements OnInit {
   books: BookModel[] = [];
-  constructor(private bookapiservice: BookApiService) {}
+  constructor(
+    private bookapiservice: BookApiService,
+    private _router: Router
+  ) {}
 
   ngOnInit(): void {
     this.bookapiservice
       .getBooks('/books')
       .subscribe((res) => (this.books = res.slice(2)));
+  }
+
+  navigateToBookDetails() {
+    this._router.navigate(['book-details']);
   }
 }

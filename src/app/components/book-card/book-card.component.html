@@ -1,10 +1,20 @@
 <div class="card_container">
-  <div class="card" *ngFor="let book of books">
+  <div
+    class="card"
+    *ngFor="let book of books"
+    (click)="navigateToBookDetails()"
+  >
     <div class="img">
       <img src="{{ book.image }}" alt="" />
     </div>
     <div class="title">{{ book.title }}</div>
-    <div class="author">Author: {{ book.author }}</div>
+    <div class="author">By: {{ book.author }}</div>
     <div class="price">Price: {{ book.price.displayValue }}</div>
+    <div
+      class="available"
+      [ngStyle]="{ color: book.available > 0 ? 'green' : 'red' }"
+    >
+      Available: {{ book.available }}
+    </div>
   </div>
 </div>

@@ -9,4 +9,5 @@ export interface BookModel {
     value: Number;
     displayValue: String;
   };
+  available: Number;
 }

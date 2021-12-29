@@ -9,9 +9,19 @@ import { HeaderComponent } from './components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BookBannerComponent } from './components/book-banner/book-banner.component';
 import { BookCardComponent } from './components/book-card/book-card.component';
+import { BookDeatilsComponent } from './pages/book-deatils/book-deatils.component';
+import { MainPageComponent } from './pages/main-page/main-page.component';
 
 @NgModule({
-  declarations: [AppComponent, BooksComponent, HeaderComponent, BookBannerComponent, BookCardComponent],
+  declarations: [
+    AppComponent,
+    BooksComponent,
+    HeaderComponent,
+    BookBannerComponent,
+    BookCardComponent,
+    BookDeatilsComponent,
+    MainPageComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
