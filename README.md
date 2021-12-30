@@ -1,3 +1,3 @@
 # BookStore
 
-run server on port 5000 npm run server
+run ng serve and npm run server(json-server)
