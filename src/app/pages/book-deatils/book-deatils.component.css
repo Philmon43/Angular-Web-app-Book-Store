@@ -38,3 +38,26 @@
 .available {
   font-weight: bolder;
 }
+
+@media only screen and (max-width: 800px) {
+  .book-detail-container {
+    flex-direction: column;
+  }
+  .book-detail-image,
+  .book-detail {
+    padding: 10px 10px 10 10px;
+    max-width: 100%;
+  }
+  .book-detail-image {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .book-detail {
+    min-height: 520px;
+  }
+  .book-detail-btn {
+    display: flex;
+    flex-direction: column;
+  }
+}
