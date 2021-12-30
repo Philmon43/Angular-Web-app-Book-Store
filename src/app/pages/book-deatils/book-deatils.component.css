@@ -1,0 +1,40 @@
+.book-detail-container {
+  display: flex;
+  background: linear-gradient(
+    to right,
+    rgb(68, 37, 146),
+    rgb(90, 53, 184),
+    rgb(68, 37, 146)
+  );
+  border-top: 1px solid black;
+  color: white;
+  font-weight: lighter;
+}
+
+.book-detail-container .book-detail .title {
+  font-size: 35px;
+}
+
+.book-detail-image,
+.book-detail {
+  padding: 20px 20px 0 20px;
+  max-width: 600px;
+}
+.book-detail-image img {
+  height: 500px;
+  box-shadow: 1px 2px 5px black;
+}
+
+.book-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.book-detail-btn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.available {
+  font-weight: bolder;
+}

@@ -18,11 +18,11 @@ export class BookCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.bookapiservice
-      .getBooks('/books')
+      .getBooks('/data')
       .subscribe((res) => (this.books = res.slice(2)));
   }
 
-  navigateToBookDetails() {
-    this._router.navigate(['book-details']);
+  navigateToBookDetails(book: BookModel) {
+    this._router.navigate(['book-details'], { state: book });
   }
 }

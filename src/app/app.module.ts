@@ -11,6 +11,7 @@ import { BookBannerComponent } from './components/book-banner/book-banner.compon
 import { BookCardComponent } from './components/book-card/book-card.component';
 import { BookDeatilsComponent } from './pages/book-deatils/book-deatils.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
+import { RoundButtonComponent } from './components/buttons/round-button/round-button.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
     BookCardComponent,
     BookDeatilsComponent,
     MainPageComponent,
+    RoundButtonComponent,
   ],
   imports: [
     BrowserModule,

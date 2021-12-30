@@ -2,7 +2,7 @@
   <div
     class="card"
     *ngFor="let book of books"
-    (click)="navigateToBookDetails()"
+    (click)="navigateToBookDetails(book)"
   >
     <div class="img">
       <img src="{{ book.image }}" alt="" />

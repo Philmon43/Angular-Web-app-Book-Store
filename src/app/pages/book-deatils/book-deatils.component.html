@@ -1,2 +1,22 @@
 <app-header></app-header>
-<p>book-deatils works!</p>
+<div class="book-detail-container">
+  <div class="book-detail-image">
+    <img src="{{ bookFromLocal.image }}" alt="" />
+  </div>
+  <div class="book-detail">
+    <div class="title">{{ bookFromLocal.title }}</div>
+    <div class="author">By {{ bookFromLocal.author | uppercase }}</div>
+    <div class="summary">{{ bookFromLocal.summary }}</div>
+    <div class="price">price: {{ bookFromLocal.price.displayValue }}</div>
+    <div
+      class="available"
+      [ngStyle]="{ color: bookFromLocal.available > 0 ? 'green' : 'red' }"
+    >
+      Available: {{ bookFromLocal.available }}
+    </div>
+    <div class="book-detail-btn">
+      <app-round-button label="order now"></app-round-button>
+      <app-round-button label="add item"></app-round-button>
+    </div>
+  </div>
+</div>
