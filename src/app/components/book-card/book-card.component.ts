@@ -23,6 +23,8 @@ export class BookCardComponent implements OnInit {
   }
 
   navigateToBookDetails(book: BookModel) {
-    this._router.navigate(['book-details'], { state: book });
+    this._router.navigate(['/book-details'], {
+      queryParams: { isbn: book.ISBN },
+    });
   }
 }

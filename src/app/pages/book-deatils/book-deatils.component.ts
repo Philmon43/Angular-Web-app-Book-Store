@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { RoundButtonComponent } from 'src/app/components/buttons/round-button/round-button.component';
+import { ActivatedRoute } from '@angular/router';
+import { BookApiService } from 'src/app/services/book-api.service';
+import { BookModel } from 'src/app/book-model';
 
 @Component({
   selector: 'app-book-deatils',
@@ -8,17 +9,24 @@ import { RoundButtonComponent } from 'src/app/components/buttons/round-button/ro
   styleUrls: ['./book-deatils.component.css'],
 })
 export class BookDeatilsComponent implements OnInit {
-  book: any;
-  bookFromLocal: any;
+  id: any;
+  books: BookModel[] = [];
 
-  constructor(private _router: Router) {
-    this.book = this._router.getCurrentNavigation()?.extras.state;
-    this.book && localStorage.setItem('data', JSON.stringify(this.book));
-  }
+  constructor(
+    private bookservices: BookApiService,
+    private _activattRout: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-    const data = localStorage.getItem('data');
-    this.bookFromLocal =
-      (data !== null && JSON.parse(data)) || this._router.navigate(['']);
+    this._activattRout.queryParams.subscribe(
+      (params) => (this.id = params.isbn)
+    );
+    this.bookservices.getBooks('/data').subscribe((res) => {
+      this.books = res.filter((book) => book.ISBN === Number(this.id) && book);
+    });
+  }
+
+  onAddItem() {
+    return <any>this.books[0].ISBN + 1;
   }
 }

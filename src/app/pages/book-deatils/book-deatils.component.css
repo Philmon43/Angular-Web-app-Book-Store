@@ -9,6 +9,7 @@
   border-top: 1px solid black;
   color: white;
   font-weight: lighter;
+  padding-bottom: 20px;
 }
 
 .book-detail-container .book-detail .title {
