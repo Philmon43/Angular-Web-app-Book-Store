@@ -11,7 +11,7 @@ export class BookBannerComponent implements OnInit {
   constructor(private bookapiservice: BookApiService) {}
 
   ngOnInit(): void {
-    this.bookapiservice.getImages('/data').subscribe((res) => {
+    this.bookapiservice.getImages().subscribe((res) => {
       this.images = res.map((data) => data['image']).slice(5);
     });
   }

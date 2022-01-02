@@ -21,12 +21,20 @@ export class BookDeatilsComponent implements OnInit {
     this._activattRout.queryParams.subscribe(
       (params) => (this.id = params.isbn)
     );
-    this.bookservices.getBooks('/data').subscribe((res) => {
+    this.bookservices.getBooks().subscribe((res) => {
       this.books = res.filter((book) => book.ISBN === Number(this.id) && book);
     });
   }
 
   onAddItem() {
-    return <any>this.books[0].ISBN + 1;
+    const updateBook = this.books[0];
+    updateBook.available = <any>updateBook.available - 1;
+    return this.bookservices.updateBook(updateBook).subscribe((res) => res);
+  }
+
+  onReturnItem() {
+    const updateBook = this.books[0];
+    updateBook.available = <any>updateBook.available + 1;
+    return this.bookservices.updateBook(updateBook).subscribe((res) => res);
   }
 }

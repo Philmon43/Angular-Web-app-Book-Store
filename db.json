@@ -1,5 +1,7 @@
 {
-  "data": [{
+  "data": [
+    {
+      "id": 9789000307975,
       "ISBN": 9789000307975,
       "title": "Vrienden voor het leven",
       "author": "Maeve Binchy",
@@ -13,6 +15,7 @@
       "available": 1
     },
     {
+      "id": 9780552159722,
       "ISBN": 9780552159722,
       "title": "Deception point",
       "author": "Dan Brown",
@@ -26,6 +29,7 @@
       "available": 1
     },
     {
+      "id": 9789022558027,
       "ISBN": 9789022558027,
       "title": "Magic staff",
       "author": "Terry Brooks",
@@ -36,9 +40,10 @@
         "value": 17.5,
         "displayValue": "17.50"
       },
-      "available": 0
+      "available": 14
     },
     {
+      "id": 9781841499789,
       "ISBN": 9781841499789,
       "title": "Bloodfire Quest",
       "author": "Terry Brooks",
@@ -49,9 +54,10 @@
         "value": 24.5,
         "displayValue": "24.50"
       },
-      "available": 1
+      "available": 18
     },
     {
+      "id": 9781409117933,
       "ISBN": 9781409117933,
       "title": "A Week in Winter",
       "author": "Maeve Binchy",
@@ -65,6 +71,7 @@
       "available": 1
     },
     {
+      "id": 9789460681387,
       "ISBN": 9789460681387,
       "title": "Blue Curacao",
       "author": "Linda van Rijn",
@@ -78,6 +85,7 @@
       "available": 1
     },
     {
+      "id": 9780751548525,
       "ISBN": 9780751548525,
       "title": "Safe Haven",
       "author": "Nicholas Sparks",
@@ -91,6 +99,7 @@
       "available": 1
     },
     {
+      "id": 9789023429258,
       "ISBN": 9789023429258,
       "title": "De wereld volgens Garp",
       "author": "John Irving",
@@ -104,6 +113,7 @@
       "available": 1
     },
     {
+      "id": 9789460680854,
       "ISBN": 9789460680854,
       "title": "Winter Chalet",
       "author": "Linda van Rijn",
@@ -117,6 +127,7 @@
       "available": 1
     },
     {
+      "id": 9789023464044,
       "ISBN": 9789023464044,
       "title": "De Vliegeraar",
       "author": "Khaled Hosseini",
@@ -130,6 +141,7 @@
       "available": 1
     },
     {
+      "id": 9789024529445,
       "ISBN": 9789024529445,
       "title": "De delta deceptie",
       "author": "Dan Brown",
@@ -143,6 +155,7 @@
       "available": 1
     },
     {
+      "id": 9789044309904,
       "ISBN": 9789044309904,
       "title": "Hou je mond!",
       "author": "Sophie Kinsella",
@@ -156,6 +169,7 @@
       "available": 1
     },
     {
+      "id": 9789023467786,
       "ISBN": 9789023467786,
       "title": "In een mens",
       "author": "John Irving",
@@ -169,6 +183,7 @@
       "available": 1
     },
     {
+      "id": 9780751548556,
       "ISBN": 9780751548556,
       "title": "The lucky one",
       "author": "Nicholas Sparks",
@@ -179,9 +194,10 @@
         "value": 9.8,
         "displayValue": "9.80"
       },
-      "available": 1
+      "available": 3
     },
     {
+      "id": 9780751542974,
       "ISBN": 9780751542974,
       "title": "Best of me",
       "author": "Nicholas Sparks",
@@ -195,6 +211,7 @@
       "available": 1
     },
     {
+      "id": 9789000316090,
       "ISBN": 9789000316090,
       "title": "Hotel aan zee",
       "author": "Maeve Binchy",
@@ -208,6 +225,7 @@
       "available": 1
     },
     {
+      "id": 9789024561858,
       "ISBN": 9789024561858,
       "title": "Inferno",
       "author": "Dan Brown",
@@ -221,6 +239,7 @@
       "available": 1
     },
     {
+      "id": 9789046113110,
       "ISBN": 9789046113110,
       "title": "In het hart",
       "author": "David Baldacci",
@@ -234,6 +253,7 @@
       "available": 1
     },
     {
+      "id": 9781447229902,
       "ISBN": 9781447229902,
       "title": "The Hit",
       "author": "David Baldacci",
@@ -247,6 +267,7 @@
       "available": 1
     },
     {
+      "id": 9789044339482,
       "ISBN": 9789044339482,
       "title": "De Tennisparty",
       "author": "Sophie Kinsella",
@@ -260,6 +281,7 @@
       "available": 1
     },
     {
+      "id": 9780552778459,
       "ISBN": 9780552778459,
       "title": "In One Person",
       "author": "John Irving",
@@ -273,6 +295,7 @@
       "available": 1
     },
     {
+      "id": 9789400501157,
       "ISBN": 9789400501157,
       "title": "De aanslag",
       "author": "David Baldacci",
@@ -286,6 +309,7 @@
       "available": 1
     },
     {
+      "id": 9789044339338,
       "ISBN": 9789044339338,
       "title": "Mag ik je nummer even?",
       "author": "Sophie Kinsella",
@@ -299,6 +323,7 @@
       "available": 1
     },
     {
+      "id": 9789022556627,
       "ISBN": 9789022556627,
       "title": "Jarka Ruus",
       "author": "Terry Brooks",
@@ -312,6 +337,7 @@
       "available": 1
     },
     {
+      "id": 9789460680755,
       "ISBN": 9789460680755,
       "title": "Last Minute",
       "author": "Linda van Rijn",
@@ -325,6 +351,7 @@
       "available": 1
     },
     {
+      "id": 9789023464143,
       "ISBN": 9789023464143,
       "title": "Duizend schitterende zonnen",
       "author": "Khaled Hosseini",
@@ -338,6 +365,7 @@
       "available": 1
     },
     {
+      "id": 9781408842423,
       "ISBN": 9781408842423,
       "title": "And the Mountains Echoed",
       "author": "Khaled Hosseini",

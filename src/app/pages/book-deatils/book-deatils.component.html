@@ -15,10 +15,13 @@
       Available: {{ books[0].available }}
     </div>
     <div class="book-detail-btn">
-      <app-round-button label="order now"></app-round-button>
       <app-round-button
-        label="add item"
+        label="Get this Book"
         (click)="onAddItem()"
+      ></app-round-button>
+      <app-round-button
+        label="Return the Book"
+        (click)="onReturnItem()"
       ></app-round-button>
     </div>
   </div>

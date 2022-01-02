@@ -18,7 +18,7 @@ export class BookCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.bookapiservice
-      .getBooks('/data')
+      .getBooks()
       .subscribe((res) => (this.books = res.slice(2)));
   }
 

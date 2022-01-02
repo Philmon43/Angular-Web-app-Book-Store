@@ -13,6 +13,7 @@ import { BookDeatilsComponent } from './pages/book-deatils/book-deatils.componen
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { RoundButtonComponent } from './components/buttons/round-button/round-button.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HyperlinksComponent } from './components/hyperlinks/hyperlinks.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MainPageComponent,
     RoundButtonComponent,
     FooterComponent,
+    HyperlinksComponent,
   ],
   imports: [
     BrowserModule,
