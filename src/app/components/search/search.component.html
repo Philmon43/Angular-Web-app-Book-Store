@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="search">
+    <input
+      type="text"
+      class="search_input"
+      [(ngModel)]="searchTerm"
+      (ngModelChange)="textChange()"
+    />
+    <div class="search_btn">
+      <fa-icon [icon]="faSearch"></fa-icon>
+    </div>
+  </div>
+  <div class="search_result" *ngIf="bookOnSearch.length !== 0">
+    <div *ngFor="let book of bookOnSearch">
+      <a [routerLink]="['/book-details']" [queryParams]="{ isbn: book.ISBN }">{{
+        book.title
+      }}</a>
+    </div>
+  </div>
+</div>

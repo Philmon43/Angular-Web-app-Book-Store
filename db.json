@@ -40,7 +40,7 @@
         "value": 17.5,
         "displayValue": "17.50"
       },
-      "available": 14
+      "available": 9
     },
     {
       "id": 9781841499789,
@@ -68,7 +68,7 @@
         "value": 11.99,
         "displayValue": "11.99"
       },
-      "available": 1
+      "available": 0
     },
     {
       "id": 9789460681387,
@@ -250,7 +250,7 @@
         "value": 5,
         "displayValue": "5.00"
       },
-      "available": 1
+      "available": 0
     },
     {
       "id": 9781447229902,

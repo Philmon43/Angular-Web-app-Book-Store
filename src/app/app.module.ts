@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { RoundButtonComponent } from './components/buttons/round-button/round-button.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HyperlinksComponent } from './components/hyperlinks/hyperlinks.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,14 @@ import { HyperlinksComponent } from './components/hyperlinks/hyperlinks.componen
     RoundButtonComponent,
     FooterComponent,
     HyperlinksComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FontAwesomeModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +6,6 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  faSearch = faSearch;
   menu = false;
 
   constructor() {}
